@@ -1,7 +1,7 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
-
+import {Try } from "@repo/ui/try";
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
   srcDark: string;
@@ -20,8 +20,14 @@ const ThemeImage = (props: Props) => {
 
 export default function Home() {
   return (
-    <div className="w-full h-screen  bg-blue-300 text-white text-center">
-      Hii jhum 
+    <div>
+          <div className="w-full h-screen  bg-blue-300 text-black text-center">
+      Hii not found 
+       <Try/>
     </div>
+
+   
+    </div>
+
   );
 }

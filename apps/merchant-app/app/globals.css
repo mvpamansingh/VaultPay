@@ -1,5 +1,6 @@
 
 @import "tailwindcss";
+@source "../../../node_modules/@repo/ui";
 
 :root {
   --background: #ffffff;
